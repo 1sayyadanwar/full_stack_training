@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+        <style>
+            .dropdown-content{
+                display:none;
+                position:absolute;
+            }
+            .dropdown-content a{
+                display:block;
+            }
+            ul{
+                background-color: green;
+                text-align: center;
+                padding: 5px;
+                margin: 5px;
+                list-style: none;
+            }
+            ul>li{
+                display: inline-block;
+                width: 100px;
+                padding: 5px;
+                border-bottom: 2px solid red;
+                background-color: #ddd;
+            }
+            ul>li a{
+                color: red;
+                font-size: 20px;
+            }
+            ul>li>a:hover{
+                color: aqua;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                box-shadow: 0px 8px 16px 0px violet;
+                background-color: #f9f9f9;
+            }
+            .dropdown-content a{
+                display: block;
+            }
+            .dropdown:hover.dropdown-content{
+                display: block;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a>home</a></li>
+                <li class="dropdown"><a>course</a>
+                <div class="dropdown-content">
+                    <a href="#">mean</a>
+                    <a href="#">mern</a>
+                    <a href="#">python</a>
+                    <a href="#">java</a>
+                </div>
+                </li>
+                <li><a>contatus</a></li>
+                <li><a>logot</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
